@@ -41,5 +41,7 @@ async def on_message(message):
 @bot.command()
 async def ping(ctx):
     await ctx.send(f"{round(bot.latency*1000)}ms")
+    
+access_token = os.environ["BOT_TOKEN"]
 
-bot.run("ODUxNzU1ODE4MzcwMzM0NzMw.YL85aw.1qZdr8MQ1bpNe8AJ6HChN-5ov2I")
+bot.run(access_token)
